@@ -30,13 +30,61 @@ img {
     display: block; /* Garante que a centralização funcione */
 }
 
+/* Centraliza o menu e ajusta o alinhamento */
+.navbar .container {
+    max-width: 1140px; /* Mesmo tamanho do carrossel */
+}
 
 /* Menu responsivo no modo mobile */
 .navbar-brand {
     font-size: 1.2rem;
 }
 
-footer {
+/* Ajusta o formulário de pesquisa no navbar */
+/* Barra de pesquisa */
+.navbar .form-control {
+    max-width: 300px; /* Ajusta o tamanho da barra de pesquisa */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Ajusta o espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    margin-left: auto; /* Empurra para a extremidade direita */
+}
+/* Botão de pesquisa */
+.navbar .btn {
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 5px 15px; /* Ajusta o espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    background-color: #d9d9d9; /* Fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    color: #333; /* Cor do texto */
+}
+
+/* Alinhamento */
+.navbar .d-flex {
+    align-items: center; /* Centraliza verticalmente */
+    background-color: transparent; /* Remove o fundo branco */
+    border: none; /* Remove bordas */
+    padding: 0; /* Remove espaçamento */
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    .navbar .form-control {
+        max-width: 100%; /* Ocupa toda a largura em telas pequenas */
+        margin: 10px 0; /* Adiciona margem em torno da barra */
+    }
+
+    .navbar .btn {
+        width: 100%; /* O botão também ocupa toda a largura */
+    }
+}
+
+.navbar .btn:hover {
+    background-color: #c0c0c0; /* Fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+}footer {
     background-color: #343a40; /* Fundo escuro */
     color: white; /* Texto branco */
     text-align: center; /* Centraliza o texto */
