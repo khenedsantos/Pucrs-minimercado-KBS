@@ -6,17 +6,18 @@ const mensagemSucesso = document.getElementById("mensagemSucesso");
 formSenha.addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
-    // Verifica se as senhas coincidem
-    const senha = document.getElementById("senha").value;
-    const confirmarSenha = document.getElementById("confirmar_senha").value;
+    // Obtém os valores das senhas
+    const senha = document.getElementById("senha").value.trim();
+    const confirmarSenha = document.getElementById("confirmar_senha").value.trim();
 
+    // Verifica se as senhas coincidem
     if (senha === confirmarSenha) {
         // Exibe a mensagem de sucesso
         mensagemSucesso.style.display = "block";
 
         // Redireciona para a página inicial após 3 segundos
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "index.html"; // Substitua pelo nome correto da página inicial, se necessário
         }, 3000); // 3000 ms = 3 segundos
     } else {
         // Exibe um alerta caso as senhas não coincidam

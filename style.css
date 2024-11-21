@@ -1,106 +1,82 @@
 /* Ajusta o cabeçalho */
 header {
-    margin: 0; /* Remove possíveis margens */
-    padding: 10px 0; /* Mantém o espaçamento interno consistente */
+    margin: 0;
+    padding: 10px 0;
 }
 
+/* Geral */
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos no tamanho total */
+    box-sizing: border-box;
 }
 
 main {
-    padding-top: 20px; /* Adiciona um pequeno espaço acima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
-/* Adiciona espaçamento entre os itens da grid */
-.row > div {
-    margin-bottom: 15px;
-}
-
-img {
-    width: 400px; /* Define uma largura fixa */
-    height: 400px; /* Define uma altura fixa */
-    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
-    border-radius: 10px; /* Deixa os cantos levemente arredondados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    display: block; /* Garante que a centralização funcione */
-}
-
-/* Centraliza o menu e ajusta o alinhamento */
+/* Navbar */
 .navbar .container {
-    max-width: 1140px; /* Mesmo tamanho do carrossel */
+    max-width: 1140px;
 }
 
-/* Menu responsivo no modo mobile */
-.navbar-brand {
-    font-size: 1.2rem;
-}
-
-/* Ajusta o formulário de pesquisa no navbar */
-/* Barra de pesquisa */
 .navbar .form-control {
-    max-width: 450px; /* Ajusta o tamanho da barra de pesquisa */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 5px 10px; /* Ajusta o espaçamento interno */
-    font-size: 14px; /* Tamanho da fonte */
-    background-color: #f2f2f2; /* Fundo cinza claro */
-    border: 1px solid #f2f2f2; /* Borda cinza clara */
-    margin-right: auto; /* Empurra para a extremidade direita */
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin-left: auto;
 }
-/* Botão de pesquisa */
+
 .navbar .btn {
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 5px 15px; /* Ajusta o espaçamento interno */
-    font-size: 14px; /* Tamanho da fonte */
-    background-color: #d9d9d9; /* Fundo cinza claro */
-    border: 1px solid #d9d9d9; /* Borda cinza clara */
-    color: #333; /* Cor do texto */
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+    color: #333;
 }
 
-/* Alinhamento */
-.navbar .d-flex {
-    align-items: center; /* Centraliza verticalmente */
-    background-color: transparent; /* Remove o fundo branco */
-    border: none; /* Remove bordas */
-    padding: 0; /* Remove espaçamento */
+/* Produtos */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
-/* Ajustes para dispositivos menores */
-@media (max-width: 768px) {
-    .navbar .form-control {
-        max-width: 100%; /* Ocupa toda a largura em telas pequenas */
-        margin: 10px 0; /* Adiciona margem em torno da barra */
-    }
-
-    .navbar .btn {
-        width: 100%; /* O botão também ocupa toda a largura */
-    }
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
 
-.navbar .btn:hover {
-    background-color: #d9d9d9; /* Fundo ao passar o mouse */
-    color: #000; /* Cor do texto ao passar o mouse */
-}footer {
-    background-color: #343a40; /* Fundo escuro */
-    color: white; /* Texto branco */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento interno */
-    position: relative; /* Garante que o rodapé fique dentro do fluxo do layout */
-    bottom: 0; /* Fixado na parte inferior */
-    width: 100%; /* Ocupa toda a largura */
+/* Define o tamanho fixo do carrossel */
+.carousel-item img {
+    width: 600; /* Ocupa toda a largura do carrossel */
+    height: 500px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    object-position: center; /* Centraliza a imagem no espaço disponível */
+    
 }
 
-form {
-    max-width: 400px; /* Define a largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário horizontalmente */
-    padding: 20px; /* Espaçamento interno para melhor apresentação */
-    border: 1px solid #ddd; /* Opcional: Adiciona uma borda leve */
-    border-radius: 8px; /* Deixa os cantos arredondados */
-    background-color: #f9f9f9; /* Fundo leve para destacar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+/* Adiciona margens ao carrossel para melhor separação */
+/* Estilo do contêiner do carrossel */
+#carrosselProdutos {
+    margin-bottom: 20px; /* Espaçamento abaixo do carrossel */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 10px; /* Cantos arredondados (opcional) */
+    overflow: hidden; /* Garante que imagens arredondadas não saiam do contêiner */
 }
+
+
 
