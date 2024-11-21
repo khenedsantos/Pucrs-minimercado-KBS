@@ -43,13 +43,13 @@ img {
 /* Ajusta o formulário de pesquisa no navbar */
 /* Barra de pesquisa */
 .navbar .form-control {
-    max-width: 300px; /* Ajusta o tamanho da barra de pesquisa */
+    max-width: 450px; /* Ajusta o tamanho da barra de pesquisa */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 5px 10px; /* Ajusta o espaçamento interno */
     font-size: 14px; /* Tamanho da fonte */
     background-color: #f2f2f2; /* Fundo cinza claro */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    margin-left: auto; /* Empurra para a extremidade direita */
+    border: 1px solid #f2f2f2; /* Borda cinza clara */
+    margin-right: auto; /* Empurra para a extremidade direita */
 }
 /* Botão de pesquisa */
 .navbar .btn {
@@ -57,7 +57,7 @@ img {
     padding: 5px 15px; /* Ajusta o espaçamento interno */
     font-size: 14px; /* Tamanho da fonte */
     background-color: #d9d9d9; /* Fundo cinza claro */
-    border: 1px solid #ccc; /* Borda cinza clara */
+    border: 1px solid #d9d9d9; /* Borda cinza clara */
     color: #333; /* Cor do texto */
 }
 
@@ -82,7 +82,7 @@ img {
 }
 
 .navbar .btn:hover {
-    background-color: #c0c0c0; /* Fundo ao passar o mouse */
+    background-color: #d9d9d9; /* Fundo ao passar o mouse */
     color: #000; /* Cor do texto ao passar o mouse */
 }footer {
     background-color: #343a40; /* Fundo escuro */
