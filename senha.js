@@ -10,14 +10,14 @@ formSenha.addEventListener("submit", function(event) {
     const senha = document.getElementById("senha").value.trim();
     const confirmarSenha = document.getElementById("confirmar_senha").value.trim();
 
-    // Verifica se as senhas coincidem
+    // Verificando coincidencia entre as senhas
     if (senha === confirmarSenha) {
         // Exibe a mensagem de sucesso
         mensagemSucesso.style.display = "block";
 
         // Redireciona para a página inicial após 3 segundos
         setTimeout(() => {
-            window.location.href = "index.html"; // Substitua pelo nome correto da página inicial, se necessário
+            window.location.href = "index.html";
         }, 3000); // 3000 ms = 3 segundos
     } else {
         // Exibe um alerta caso as senhas não coincidam
