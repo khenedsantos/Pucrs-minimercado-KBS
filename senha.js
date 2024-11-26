@@ -2,7 +2,7 @@
 const formSenha = document.getElementById("formSenha");
 const mensagemSucesso = document.getElementById("mensagemSucesso");
 
-// Adiciona um evento de envio ao formulário
+// Adicionando um evento de envio ao formulário
 formSenha.addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 

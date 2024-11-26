@@ -1,122 +1,140 @@
+/* === Estilos Gerais === */
+
 /* Ajusta o cabeçalho */
 header {
     margin: 0;
     padding: 10px 0;
 }
 
-/* Geral */
+/* Configurações básicas do corpo */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
+/* Configuração do contêiner principal */
 main {
-    padding-top: 20px;
-    margin: 0 auto;
-    flex-grow: 1;
+    padding-top: 20px; /* Adiciona espaçamento no topo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    flex-grow: 1; /* Faz o conteúdo crescer para ocupar o espaço disponível */
 }
 
-/* Navbar */
+/* === Navbar === */
+
+/* Define a largura máxima da navbar */
 .navbar .container {
-    max-width: 1140px;
+    max-width: 1320px; /* Ajusta o alinhamento do menu com o conteúdo */
 }
 
+/* Estilo da barra de pesquisa */
 .navbar .form-control {
     max-width: 300px;
     border-radius: 15px;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 5px 10px; 
+    font-size: 14px; 
     background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    margin-left: auto;
+    border: 1px solid #ccc; 
+    margin-left: auto; 
 }
 
+/* Estilo do botão na navbar */
 .navbar .btn {
     border-radius: 15px;
-    padding: 5px 15px;
-    font-size: 14px;
-    background-color: #d9d9d9;
-    border: 1px solid #ccc;
-    color: #333;
+    padding: 5px 15px; 
+    font-size: 14px; 
+    background-color: #d9d9d9; 
+    border: 1px solid #ccc; 
+    color: #333; 
 }
 
-/* Produtos */
+/* === Produtos === */
+
+/* Estiliza imagens de produtos */
 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto;
+    display: block; /* Garante o alinhamento */
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
-/* Rodapé */
+/* === Rodapé === */
+
+/* Configurações do rodapé */
 footer {
     background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    margin-top: auto;
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    width: 100%; 
+    margin-top: auto; 
 }
 
-/* Define o tamanho fixo do carrossel */
+/* === Carrossel === */
+
+/* Estilo das imagens no carrossel */
 .carousel-item img {
-    width: 600; /* Ocupa toda a largura do carrossel */
-    height: 500px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
-    object-position: center; /* Centraliza a imagem no espaço disponível */
-    
+    width: 600; /* Define uma largura fixa */
+    height: 500px; /* Define uma altura fixa */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    object-position: center; /* Centraliza a imagem */
 }
 
-/* Adiciona margens ao carrossel para melhor separação */
-/* Estilo do contêiner do carrossel */
+/* Configura o contêiner do carrossel */
 #carrosselProdutos {
-    margin-bottom: 20px; /* Espaçamento abaixo do carrossel */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    border-radius: 10px; /* Cantos arredondados (opcional) */
-    overflow: hidden; /* Garante que imagens arredondadas não saiam do contêiner */
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; /* Garante que as bordas arredondadas sejam respeitadas */
 }
 
+/* === Formulário de Agendamento === */
+
+/* Estilo do formulário de agendamento */
 #formAgendamento {
-    max-width: 600px; /* Define uma largura máxima */
-    margin: 0 auto; /* Centraliza o formulário */
-    padding: 20px; /* Adiciona espaçamento interno */
-    background-color: #f9f9f9; /* Cor de fundo leve */
-    border: 1px solid #ddd; /* Adiciona uma borda leve */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+/* Estilo do botão no formulário */
 #formAgendamento button {
-    background-color: #007bff; /* Azul padrão */
-    border: none; /* Remove a borda padrão */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #007bff;
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-size: 1rem; 
     cursor: pointer; /* Aplica o cursor de clique */
 }
 
+/* Estilo do botão ao passar o mouse */
 #formAgendamento button:hover {
-    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+    background-color: #0056b3;
 }
 
-
+/* Mensagem de sucesso no formulário */
 #mensagemAgendamento {
-    display: none; /* Inicialmente escondido */
-    text-align: center;
-    font-weight: bold;
-    color: green;
+    display: none; /* Oculta inicialmente a mensagem */
+    text-align: center; 
+    font-weight: bold; 
+    color: green; 
 }
 
+/* === Acessibilidade === */
+
+/* Estilo para foco em links e botões */
 a:focus, button:focus {
-    outline: 2px dashed #007bff; /* Define uma borda de foco visível */
-    outline-offset: 4px; /* Adiciona um pequeno espaçamento */
+    outline: 2px dashed #007bff; /* Bordas destacadas */
+    outline-offset: 4px; /* Espaçamento entre o contorno e o elemento */
 }
-
