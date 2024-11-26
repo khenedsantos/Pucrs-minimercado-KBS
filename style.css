@@ -6,6 +6,9 @@ header {
 
 /* Geral */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +17,7 @@ body {
 main {
     padding-top: 20px;
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 /* Navbar */
@@ -58,6 +62,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    margin-top: auto;
 }
 
 /* Define o tamanho fixo do carrossel */
@@ -78,5 +83,40 @@ footer {
     overflow: hidden; /* Garante que imagens arredondadas não saiam do contêiner */
 }
 
+#formAgendamento {
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo leve */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
 
+#formAgendamento button {
+    background-color: #007bff; /* Azul padrão */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Aplica o cursor de clique */
+}
+
+#formAgendamento button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+
+#mensagemAgendamento {
+    display: none; /* Inicialmente escondido */
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+a:focus, button:focus {
+    outline: 2px dashed #007bff; /* Define uma borda de foco visível */
+    outline-offset: 4px; /* Adiciona um pequeno espaçamento */
+}
 
